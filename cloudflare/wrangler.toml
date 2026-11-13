@@ -1,0 +1,12 @@
+name = "vexora-online"
+main = "worker.js"
+compatibility_date = "2026-11-13"
+workers_dev = true
+
+[[durable_objects.bindings]]
+name = "VEXORA_ROOM"
+class_name = "VexoraRoom"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["VexoraRoom"]
